@@ -1,56 +1,65 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yi Yang | Academic Homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <div class="page-shell">
     <aside class="sidebar card">
-      <div class="avatar" aria-hidden="true">YY</div>
+      <div class="avatar">
+        <img class="avatar-image" src="assets/images/Profile_picture.png" alt="Yi Yang profile photo" />
+      </div>
       <h1>Yi Yang</h1>
-      <p class="role">Robotics · Machine Learning · Engineering Mechanics</p>
+      <p class="role">Third-year Undergraduate · Robotics · Machine Learning</p>
 
       <nav class="quick-nav">
         <a href="#about">About</a>
         <a href="#news">News</a>
-        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
         <a href="#awards">Awards</a>
       </nav>
 
       <div class="contact-block">
+        <p><strong>Status</strong><br>Junior, B.Eng. Student</p>
         <p><strong>Email</strong><br><a href="mailto:yangyi04@sjtu.edu.cn">yangyi04@sjtu.edu.cn</a></p>
         <p><strong>Email</strong><br><a href="mailto:yy6@andrew.cmu.edu">yy6@andrew.cmu.edu</a></p>
         <p><strong>Location</strong><br>Pittsburgh / Shanghai</p>
       </div>
 
       <div class="button-row">
-        <a class="btn" href="#">CV（待补充）</a>
-        <a class="btn ghost" href="#">Google Scholar（待补充）</a>
+        <a class="btn" href="#">CV</a>
+        <a class="btn ghost" href="#">Google Scholar</a>
       </div>
     </aside>
 
     <main class="content">
+      <!-- Core profile summary -->
       <section id="about" class="card">
         <h2>About</h2>
         <p>
-          I am an undergraduate student at <strong>Shanghai Jiao Tong University</strong> and currently a research intern at
-          <strong>Carnegie Mellon University</strong>. My research focuses on robotic skill learning, dexterous manipulation,
-          and long-horizon planning.
+          I am a third-year undergraduate student in Engineering Mechanics at <strong>Shanghai Jiao Tong University</strong>,
+          where I am advised by
+          <a href="https://naoce.sjtu.edu.cn/teachers/10294.html" target="_blank" rel="noopener noreferrer">Prof. Daolin Ma</a>,
+          and I am currently conducting research at <strong>Carnegie Mellon University</strong> with
+          <a href="https://www.cs.cmu.edu/~choset/" target="_blank" rel="noopener noreferrer">Prof. Howie Choset</a>.
         </p>
-        <p class="placeholder">[这里可补充：一句话研究愿景、在投方向、招生/合作信息]</p>
+        <p>
+          My research interests lie in robotic manipulation, dexterous manipulation, deformable object modeling, and
+          skill learning for long-horizon tasks. In particular, I am interested in building robotic systems that can
+          robustly perceive and manipulate complex deformable objects in real-world environments.
+        </p>
         <ul class="chips">
+          <li>Dexterous Manipulation</li>
+          <li>Deformable Objects</li>
           <li>Skill Learning</li>
-          <li>Offline RL</li>
-          <li>World Models</li>
-          <li>Dexterous Hands</li>
+          <li>Embodied Intelligence</li>
         </ul>
       </section>
 
@@ -60,58 +69,66 @@
           <span class="muted">Recent updates</span>
         </div>
         <ul class="timeline compact">
-          <li><span>2026.02</span> [待补充] 新论文/项目更新</li>
+          <li><span>2026.03</span> DeformX was submitted to IROS 2026.</li>
+          <li><span>2025.12</span> The bionic hand manuscript is available on arXiv.</li>
           <li><span>2025.10</span> Joined Biorobotics Lab, CMU RI as Student Intern.</li>
-          <li><span>2025.06</span> [待补充] 会议投稿/比赛获奖信息</li>
         </ul>
       </section>
 
-      <section id="research" class="card">
-        <div class="section-head">
-          <h2>Selected Projects</h2>
-          <span class="muted">Research experience</span>
-        </div>
-
-        <article class="item">
-          <h3>Skill Learning and Offline World Models for Long-Horizon Planning</h3>
-          <p class="meta">Biorobotics Lab, CMU RI · Leader · 2025.10 – Present</p>
-          <p>Investigating temporally abstract skill learning with offline data and evaluating robustness on D4RL-style benchmarks.</p>
-        </article>
-
-        <article class="item">
-          <h3>Tactile Dexterity In-Hand Manipulation via Imitation Learning</h3>
-          <p class="meta">MPI Lab, SJTU · Co-Leader · 2025.02 – Present</p>
-          <p>Designing tactile observation representations for stable in-hand manipulation under diverse object poses.</p>
-        </article>
-
-        <article class="item placeholder-block">
-          <h3>[待补充] 代表性项目 3</h3>
-          <p class="meta">Lab / Role / Time</p>
-          <p>可以在这里补充方法、数据集、效果指标和你的具体贡献。</p>
-        </article>
-      </section>
-
+      <!-- Research outputs -->
       <section id="publications" class="card">
         <div class="section-head">
           <h2>Publications</h2>
-          <span class="muted">* indicates equal contribution（可选）</span>
         </div>
-        <ol class="pub-list">
-          <li>
-            <strong>Development of a 15-DoF Bionic Hand with Cable-Driven Transmission and Distributed Actuation</strong><br>
-            Haoqi Han, <strong>Yi Yang</strong>, Yifei Yu, Yixuan Zhou, Xiaohan Zhu, Hesheng Wang<br>
-            <em>IEEE/ASME Transactions on Mechatronics, under consideration, 2025.</em>
-          </li>
-          <li class="placeholder">[待补充] 论文 2（标题、作者、会议/期刊、链接）</li>
-          <li class="placeholder">[待补充] 论文 3（标题、作者、会议/期刊、链接）</li>
-        </ol>
+
+        <div class="publication-list">
+          <article class="publication-card">
+            <div class="publication-media deformx-media">
+              <span class="pub-badge warm">In Submission</span>
+              <img class="publication-image publication-image-deformx" src="assets/images/DeformX.png" alt="DeformX project figure" />
+            </div>
+
+            <div class="publication-body">
+              <h3>DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects</h3>
+              <p class="pub-authors">
+                <strong>Yi Yang*</strong>, Xiang Fei*, Lehong Wang*, Chenghao Li, Zilin Dai, Henry Kou, Lu Li, Howie Choset
+              </p>
+              <p class="pub-meta">In submission, 2026.</p>
+              <div class="pub-links">
+                <span class="pub-btn disabled">Details coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-card">
+            <div class="publication-media hand-media">
+              <span class="pub-badge">In Submission</span>
+              <img class="publication-image publication-image-hand" src="assets/images/Hand.png" alt="Bionic hand project figure" />
+            </div>
+
+            <div class="publication-body">
+              <h3>
+                <a href="https://arxiv.org/abs/2512.04399" target="_blank" rel="noopener noreferrer">
+                  Development of a 15-Degree-of-Freedom Bionic Hand with Cable-Driven Transmission and Distributed Actuation
+                </a>
+              </h3>
+              <p class="pub-authors">Haoqi Han, <strong>Yi Yang</strong>, Yifei Yu, Yixuan Zhou, Xiaohan Zhu, Hesheng Wang</p>
+              <p class="pub-meta">In submission, 2025.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://arxiv.org/abs/2512.04399" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a class="pub-btn ghost" href="https://arxiv.org/pdf/2512.04399" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
+      <!-- Background and experience -->
       <section id="experience" class="card two-col">
         <div>
           <h2>Education</h2>
           <ul class="timeline">
-            <li><span>2023 – 2027</span> B.Eng. in Engineering Mechanics, Shanghai Jiao Tong University</li>
+            <li><span>2023 – 2027</span> B.Eng. in Engineering Mechanics, Shanghai Jiao Tong University (currently junior)</li>
             <li><span>2025 – 2026</span> Student Intern, Biorobotics Lab, Carnegie Mellon University</li>
             <li><span>2024 Summer</span> UC Berkeley Summer Session (AI, Discrete Math)</li>
           </ul>
@@ -123,19 +140,18 @@
             <li><strong>Robotics:</strong> RL, Imitation Learning, Offline RL</li>
             <li><strong>Simulation:</strong> MuJoCo, Isaac Lab</li>
             <li><strong>Tools:</strong> ROS, STM32, SolidWorks</li>
-            <li class="placeholder">[待补充] 个人常用工作流/工具链</li>
           </ul>
         </div>
       </section>
 
+      <!-- Recognition -->
       <section id="awards" class="card">
-        <h2>Honors & Awards</h2>
+        <h2>Honors &amp; Awards</h2>
         <ul class="award-grid">
           <li>Zhiyuan Honorary Scholarship · 2024</li>
           <li>Second Prize Scholarship · 2024</li>
           <li>Shanghai College Student Mechanics Competition (First Prize) · 2024</li>
           <li>National First Prize, National Physics Olympiad · 2022</li>
-          <li class="placeholder">[待补充] 其他奖项 / 服务 / 学术活动</li>
         </ul>
       </section>
     </main>
