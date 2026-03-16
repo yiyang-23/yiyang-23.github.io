@@ -52,8 +52,8 @@ body {
 }
 
 .avatar {
-  width: 122px;
-  height: 122px;
+  width: 82px;
+  height: 82px;
   border-radius: 50%;
   background: linear-gradient(135deg, #3c64dd, #7f98ff);
   color: #fff;
@@ -61,7 +61,7 @@ body {
   display: grid;
   place-items: center;
   letter-spacing: 1px;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 h1 {
@@ -220,86 +220,13 @@ h3 {
   color: var(--muted);
 }
 
-.project-feature {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: 280px minmax(0, 1fr);
-  align-items: start;
-}
-
-.project-media {
-  width: 100%;
-  min-height: 165px;
-  border-radius: 12px;
-  border: 1px solid #d9dff0;
-  background:
-    linear-gradient(120deg, #f8f4e4, #fdfefe 55%),
-    linear-gradient(0deg, rgba(53, 95, 221, 0.12), rgba(53, 95, 221, 0.12));
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  color: #bd2f2f;
-  font-size: 2rem;
-}
-
 .pub-list {
-  display: grid;
-  gap: 14px;
-}
-
-.pub-card {
-  display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  gap: 14px;
-  border: 1px solid #e6e9f3;
-  background: #fbfcff;
-  border-radius: 12px;
-  padding: 12px;
-}
-
-.pub-cover {
-  min-height: 146px;
-  border-radius: 10px;
-  border: 1px solid #d8deed;
-  background: linear-gradient(135deg, #eff3ff, #f7f9ff);
-  display: grid;
-  place-items: center;
-  color: #2f4fb2;
-  font-weight: 700;
-  text-align: center;
-}
-
-.pub-title {
   margin: 0;
-  color: #2f85c6;
-  font-size: 1.2rem;
+  padding-left: 22px;
 }
 
-.pub-authors,
-.pub-venue {
-  margin: 6px 0 0;
-  color: #4d5666;
-}
-
-.link-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.link-row a {
-  border: 1px solid #292f3b;
-  color: #111;
-  text-decoration: none;
-  padding: 4px 14px;
-  border-radius: 2px;
-  background: #fff;
-  font-size: 0.95rem;
-}
-
-.link-row a:hover {
-  background: #f4f6fc;
+.pub-list li {
+  margin-bottom: 10px;
 }
 
 .two-col {
@@ -310,10 +237,7 @@ h3 {
 
 .placeholder,
 .placeholder-block,
-.placeholder li,
-.placeholder-card .pub-title,
-.placeholder-card .pub-authors,
-.placeholder-card .pub-venue {
+.placeholder li {
   color: #6d7484;
 }
 
@@ -333,9 +257,7 @@ h3 {
     position: static;
   }
 
-  .two-col,
-  .pub-card,
-  .project-feature {
+  .two-col {
     grid-template-columns: 1fr;
   }
 }
