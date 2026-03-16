@@ -1,174 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yi Yang | Personal Homepage</title>
+  <title>Yi Yang | Academic Homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="hero card">
-      <h1>Yi YANG</h1>
-      <p class="subtitle">Undergraduate in Engineering Mechanics · Robotics &amp; Machine Learning Researcher</p>
-      <div class="contact-grid">
-        <span><strong>Mobile:</strong> (+1) 878-999-5966</span>
-        <span><strong>Email:</strong> <a href="mailto:yangyi04@sjtu.edu.cn">yangyi04@sjtu.edu.cn</a></span>
-        <span><strong>Email:</strong> <a href="mailto:yy6@andrew.cmu.edu">yy6@andrew.cmu.edu</a></span>
-        <span><strong>Address:</strong> 4750 Centre Ave, Pittsburgh, PA 15213</span>
+  <div class="page-shell">
+    <aside class="sidebar card">
+      <div class="avatar" aria-hidden="true">YY</div>
+      <h1>Yi Yang</h1>
+      <p class="role">Robotics · Machine Learning · Engineering Mechanics</p>
+
+      <nav class="quick-nav">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+      </nav>
+
+      <div class="contact-block">
+        <p><strong>Email</strong><br><a href="mailto:yangyi04@sjtu.edu.cn">yangyi04@sjtu.edu.cn</a></p>
+        <p><strong>Email</strong><br><a href="mailto:yy6@andrew.cmu.edu">yy6@andrew.cmu.edu</a></p>
+        <p><strong>Location</strong><br>Pittsburgh / Shanghai</p>
       </div>
-    </header>
 
-    <main>
-      <section class="card">
-        <h2>Professional Summary</h2>
+      <div class="button-row">
+        <a class="btn" href="#">CV（待补充）</a>
+        <a class="btn ghost" href="#">Google Scholar（待补充）</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="about" class="card">
+        <h2>About</h2>
         <p>
-          Motivated and detail-oriented undergraduate student at Shanghai Jiao Tong University, specializing in Engineering Mechanics with a strong focus on robotics, dexterous manipulation, and machine learning. Currently expanding research experience as a Student Intern at Carnegie Mellon University, conducting research on learning-based methods for robotic skill acquisition and planning. Actively contributed to multiple research projects and independently led several projects, demonstrating strong end-to-end project ownership.
+          I am an undergraduate student at <strong>Shanghai Jiao Tong University</strong> and currently a research intern at
+          <strong>Carnegie Mellon University</strong>. My research focuses on robotic skill learning, dexterous manipulation,
+          and long-horizon planning.
         </p>
-      </section>
-
-      <section class="card">
-        <h2>Research Interests</h2>
-        <ul class="tag-list">
+        <p class="placeholder">[这里可补充：一句话研究愿景、在投方向、招生/合作信息]</p>
+        <ul class="chips">
           <li>Skill Learning</li>
-          <li>Offline Reinforcement Learning</li>
-          <li>Long-Horizon Robotics Tasks</li>
-          <li>Dexterous Manipulation</li>
-          <li>Robotic Hands</li>
+          <li>Offline RL</li>
+          <li>World Models</li>
+          <li>Dexterous Hands</li>
         </ul>
       </section>
 
-      <section class="card">
-        <h2>Education</h2>
-        <div class="entry">
-          <div class="entry-header">
-            <h3>Carnegie Mellon University RI, Biorobotics Lab</h3>
-            <span>10/2025 - 09/2026</span>
-          </div>
-          <p><strong>Student Intern</strong></p>
+      <section id="news" class="card">
+        <div class="section-head">
+          <h2>News</h2>
+          <span class="muted">Recent updates</span>
         </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <h3>Shanghai Jiao Tong University (Member of the C9 League)</h3>
-            <span>09/2023 - 06/2027</span>
-          </div>
-          <p><strong>Bachelor of Engineering in Engineering Mechanics</strong> · Shanghai, CN</p>
-          <p>ZHIYUAN HONORS PROGRAM (Top 10% of students)</p>
-          <ul>
-            <li>Current Grade: 89/100 (Current GPA: 3.8)</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <h3>University of California, Berkeley</h3>
-            <span>06/2024 - 08/2024</span>
-          </div>
-          <p><strong>Summer School Program (GPA: 4.0)</strong> · Berkeley, CA, US</p>
-          <ul>
-            <li>Core Courses: Artificial Intelligence (A+), Discrete Mathematics (A)</li>
-          </ul>
-        </div>
+        <ul class="timeline compact">
+          <li><span>2026.02</span> [待补充] 新论文/项目更新</li>
+          <li><span>2025.10</span> Joined Biorobotics Lab, CMU RI as Student Intern.</li>
+          <li><span>2025.06</span> [待补充] 会议投稿/比赛获奖信息</li>
+        </ul>
       </section>
 
-      <section class="card">
-        <h2>Publications</h2>
-        <div class="entry">
-          <h3>Development of a 15-DoF Bionic Hand with Cable-Driven Transmission and Distributed Actuation</h3>
-          <p>Haoqi Han, Yi Yang, Yifei Yu, Yixuan Zhou, Xiaohan Zhu, Hesheng Wang</p>
-          <p><em>IEEE/ASME Transactions on Mechatronics, under consideration (2nd revision), 2025</em></p>
+      <section id="research" class="card">
+        <div class="section-head">
+          <h2>Selected Projects</h2>
+          <span class="muted">Research experience</span>
         </div>
+
+        <article class="item">
+          <h3>Skill Learning and Offline World Models for Long-Horizon Planning</h3>
+          <p class="meta">Biorobotics Lab, CMU RI · Leader · 2025.10 – Present</p>
+          <p>Investigating temporally abstract skill learning with offline data and evaluating robustness on D4RL-style benchmarks.</p>
+        </article>
+
+        <article class="item">
+          <h3>Tactile Dexterity In-Hand Manipulation via Imitation Learning</h3>
+          <p class="meta">MPI Lab, SJTU · Co-Leader · 2025.02 – Present</p>
+          <p>Designing tactile observation representations for stable in-hand manipulation under diverse object poses.</p>
+        </article>
+
+        <article class="item placeholder-block">
+          <h3>[待补充] 代表性项目 3</h3>
+          <p class="meta">Lab / Role / Time</p>
+          <p>可以在这里补充方法、数据集、效果指标和你的具体贡献。</p>
+        </article>
       </section>
 
-      <section class="card">
-        <h2>Project Experience</h2>
-
-        <div class="entry">
-          <div class="entry-header">
-            <h3>Skill Learning and Offline World Models for Long-Horizon Planning</h3>
-            <span>10/2025 - Present</span>
-          </div>
-          <p><strong>Leader</strong> · Biorobotics Lab, CMU RI</p>
-          <ul>
-            <li>Investigating offline skill learning with temporally abstract world models.</li>
-            <li>Reproducing and extending OPOSM-style planning on D4RL benchmarks.</li>
-            <li>Evaluating zero-shot generalization and robustness under environment mismatch.</li>
-          </ul>
+      <section id="publications" class="card">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <span class="muted">* indicates equal contribution（可选）</span>
         </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <h3>Tactile Dexterity In-Hand Manipulation Research using Imitation Learning</h3>
-            <span>02/2025 - Present</span>
-          </div>
-          <p><strong>Co-Leader</strong> · MPI Lab, SJTU</p>
-          <ul>
-            <li>Investigating tactile-based imitation learning for dexterous in-hand manipulation.</li>
-            <li>Designing tactile observation representations for multi-contact manipulation.</li>
-            <li>Evaluating manipulation robustness under varying object poses and contact conditions.</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <h3>15-Degree-of-Freedom Multi-Fingered Bionic Hand Based on Tendon Drive</h3>
-            <span>02/2024 - 02/2025</span>
-          </div>
-          <p><strong>Participant</strong> · IRMV Lab, SJTU</p>
-          <ul>
-            <li>Designed and integrated a 15-DoF tendon-driven dexterous hand system for enhanced flexibility and control precision.</li>
-            <li>Led system integration across mechanical structure, actuation, and control pipelines.</li>
-            <li>Developed control algorithms for multi-finger coordination and grasp execution.</li>
-            <li>Conducted quantitative motion and grasping performance evaluations on the physical platform.</li>
-            <li>Contributed to a journal manuscript reporting system design and experimental results.</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <h3>Visual Manipulation of 16-Degree-of-Freedom Dexterous Hand Project</h3>
-            <span>11/2023 - 03/2024</span>
-          </div>
-          <p><strong>Leader</strong> · IRMV Lab, SJTU</p>
-          <ul>
-            <li>Conducted an in-depth literature review on dexterous hand design and high-DoF manipulation systems.</li>
-            <li>Developed a full kinematic model of a 16-DoF dexterous hand.</li>
-            <li>Built a simulation environment and experimental platform to validate kinematic accuracy.</li>
-            <li>Designed and implemented the mechanical structure of the dexterous hand prototype.</li>
-            <li>Integrated visual sensing for manipulation feedback and evaluation.</li>
-            <li>Implemented basic motion control modules including posture control and trajectory tracking.</li>
-          </ul>
-        </div>
+        <ol class="pub-list">
+          <li>
+            <strong>Development of a 15-DoF Bionic Hand with Cable-Driven Transmission and Distributed Actuation</strong><br>
+            Haoqi Han, <strong>Yi Yang</strong>, Yifei Yu, Yixuan Zhou, Xiaohan Zhu, Hesheng Wang<br>
+            <em>IEEE/ASME Transactions on Mechatronics, under consideration, 2025.</em>
+          </li>
+          <li class="placeholder">[待补充] 论文 2（标题、作者、会议/期刊、链接）</li>
+          <li class="placeholder">[待补充] 论文 3（标题、作者、会议/期刊、链接）</li>
+        </ol>
       </section>
 
-      <section class="card two-col">
+      <section id="experience" class="card two-col">
         <div>
-          <h2>Honors &amp; Awards</h2>
-          <ul>
-            <li>Zhiyuan Honorary Scholarship (12/2024)</li>
-            <li>Second Prize Scholarship (12/2024)</li>
-            <li>First Prize of Shanghai College Student Mechanics Competition (11/2024)</li>
-            <li>Zhiyuan Honorary Scholarship (01/2023)</li>
-            <li>National First Prize in the National Physics Olympiad in China (09/2022)</li>
-            <li>Provincial Second Prize in the National Olympiad in Informatics in Provinces in China (12/2020)</li>
+          <h2>Education</h2>
+          <ul class="timeline">
+            <li><span>2023 – 2027</span> B.Eng. in Engineering Mechanics, Shanghai Jiao Tong University</li>
+            <li><span>2025 – 2026</span> Student Intern, Biorobotics Lab, Carnegie Mellon University</li>
+            <li><span>2024 Summer</span> UC Berkeley Summer Session (AI, Discrete Math)</li>
           </ul>
         </div>
-
         <div>
           <h2>Skills</h2>
-          <ul>
-            <li><strong>Programming:</strong> Python, PyTorch, C/C++</li>
-            <li><strong>Robot Learning:</strong> Reinforcement Learning, Imitation Learning, Offline RL</li>
+          <ul class="skill-list">
+            <li><strong>Programming:</strong> Python, C/C++, PyTorch</li>
+            <li><strong>Robotics:</strong> RL, Imitation Learning, Offline RL</li>
             <li><strong>Simulation:</strong> MuJoCo, Isaac Lab</li>
-            <li><strong>Robotics Software:</strong> ROS</li>
-            <li><strong>Hardware:</strong> STM32, Embedded Systems, Circuit Design</li>
-            <li><strong>CAD:</strong> SolidWorks</li>
+            <li><strong>Tools:</strong> ROS, STM32, SolidWorks</li>
+            <li class="placeholder">[待补充] 个人常用工作流/工具链</li>
           </ul>
         </div>
+      </section>
+
+      <section id="awards" class="card">
+        <h2>Honors & Awards</h2>
+        <ul class="award-grid">
+          <li>Zhiyuan Honorary Scholarship · 2024</li>
+          <li>Second Prize Scholarship · 2024</li>
+          <li>Shanghai College Student Mechanics Competition (First Prize) · 2024</li>
+          <li>National First Prize, National Physics Olympiad · 2022</li>
+          <li class="placeholder">[待补充] 其他奖项 / 服务 / 学术活动</li>
+        </ul>
       </section>
     </main>
   </div>
