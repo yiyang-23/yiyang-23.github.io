@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeformX | Yi Yang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="project-page-body">
+  <main class="project-shell">
+    <a class="project-back-link" href="index.html#publications">Back to homepage</a>
+
+    <section class="card project-hero">
+      <div class="project-status-row">
+        <span class="pub-badge warm project-status-badge">In Submission</span>
+        <span class="project-kicker">Deformable Linear Objects / Co-Simulation / Sim-to-Real</span>
+      </div>
+
+      <h1>DeformX</h1>
+      <p class="project-subtitle">A Versatile Co-Simulation Framework for Deformable Linear Objects</p>
+
+      <p class="project-authors">
+        Yi Yang<sup>1,3,4,*</sup>, Xiang Fei<sup>1,*</sup>, Lehong Wang<sup>1,*</sup>, Chenghao Li<sup>2</sup>,
+        Zilin Dai<sup>5</sup>, Henry Kou<sup>1</sup>, Howie Choset<sup>1</sup>, Lu Li<sup>1</sup>
+      </p>
+
+      <div class="project-affiliations">
+        <p><sup>1</sup>The Robotics Institute, Carnegie Mellon University</p>
+        <p><sup>2</sup>Department of Mechanical Engineering, Carnegie Mellon University</p>
+        <p><sup>3</sup>School of Ocean and Civil Engineering, Shanghai Jiao Tong University</p>
+        <p><sup>4</sup>Zhiyuan College, Shanghai Jiao Tong University</p>
+        <p><sup>5</sup>Harvard University</p>
+      </div>
+
+      <p class="project-note">* Equal contribution</p>
+
+      <div class="project-actions">
+        <a class="btn" href="assets/docs/DeformX.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+        <a class="btn ghost" href="https://www.youtube.com/watch?v=CQvS8lQYSS8" target="_blank" rel="noopener noreferrer">Video</a>
+        <a class="btn ghost" href="index.html#publications">Publications</a>
+      </div>
+
+      <figure class="project-cover">
+        <img src="assets/images/deformx_cover.jpg" alt="DeformX framework overview" />
+      </figure>
+
+      <p class="project-lead">
+        Simulating deformable linear objects such as wires, cables, and ropes with both visual realism and
+        physical accuracy remains a significant challenge. DeformX integrates a Cosserat rod physics engine
+        with NVIDIA Isaac Sim, enabling dynamics, self-collisions, and interactions with free-form meshes
+        while using mesh skinning to map rod deformations to CAD models for high-fidelity visualization.
+      </p>
+    </section>
+
+    <section class="card project-section">
+      <div class="section-head">
+        <h2>Key Contributions</h2>
+        <span class="muted">Framework, rendering, contact, dataset</span>
+      </div>
+
+      <div class="project-feature">
+        <figure class="project-feature-media">
+          <img src="assets/images/deformx_system.png" alt="DeformX co-simulation framework diagram" />
+        </figure>
+        <div class="project-feature-copy">
+          <h3>Co-Simulation Framework</h3>
+          <p>
+            Integrates a Cosserat rod physics engine with NVIDIA Isaac Sim through a multi-rate coupling
+            scheme, bridging principled DLO physics, realistic visualization, and robot-learning-compatible
+            scene authoring in a single pipeline.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-grid project-grid-three">
+        <article class="project-mini-card">
+          <figure class="project-mini-media">
+            <img src="assets/images/deformx_figure2.png" alt="Mesh skinning visualization for DeformX" />
+          </figure>
+          <h3>Mesh Skinning</h3>
+          <p>Maps discrete Cosserat rod deformation onto CAD models for high-fidelity visualization.</p>
+        </article>
+
+        <article class="project-mini-card">
+          <figure class="project-mini-media">
+            <img src="assets/images/deformx_contact.png" alt="Free-form mesh contact in DeformX" />
+          </figure>
+          <h3>Free-Form Mesh Contact</h3>
+          <p>Supports realistic interaction between deformable linear objects and arbitrary meshes.</p>
+        </article>
+
+        <article class="project-mini-card">
+          <figure class="project-mini-media">
+            <img src="assets/images/deformx_pipeline.jpg" alt="WireSeg-32k dataset generation pipeline" />
+          </figure>
+          <h3>WireSeg-32k Dataset</h3>
+          <p>Provides 32,000 synthetic wire segmentation images with depth and instance masks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card project-section">
+      <div class="section-head">
+        <h2>WireSeg-32k Dataset &amp; Segmentation Results</h2>
+        <span class="muted">Synthetic-to-real perception transfer</span>
+      </div>
+
+      <div class="project-grid project-grid-two">
+        <article class="project-panel">
+          <figure class="project-panel-media">
+            <img src="assets/images/deformx_dataset.jpg" alt="WireSeg-32k synthetic dataset examples" />
+          </figure>
+          <p class="project-caption">
+            32,000 synthetic images from 300+ simulation runs across Easy, Medium, and Hard tiers in
+            wire-on-plane, flying-wire, and data-center scenes.
+          </p>
+        </article>
+
+        <article class="project-panel">
+          <figure class="project-panel-media">
+            <img src="assets/images/deformx_segmentation.jpg" alt="Segmentation results from DeformX-generated training data" />
+          </figure>
+          <p class="project-caption">
+            Fine-tuning SAM3 on DeformX-generated data yields a <strong>10.2% mAP@75 improvement</strong>
+            on real-image wire instance segmentation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card project-section">
+      <div class="section-head">
+        <h2>Sim-to-Real Robot Learning</h2>
+        <span class="muted">Validation and transfer on UR5e</span>
+      </div>
+
+      <div class="project-stack">
+        <article class="project-panel project-panel-narrow">
+          <figure class="project-panel-media">
+            <img src="assets/images/deformx_sin_motion.jpg" alt="Physics validation with robot-driven rope motion" />
+          </figure>
+          <p class="project-caption">Physics validation with robot-driven rope motion and motion-capture comparison.</p>
+        </article>
+
+        <article class="project-panel project-panel-narrow">
+          <figure class="project-panel-media">
+            <img src="assets/images/deformx_demo3.jpg" alt="Goal-conditioned rope manipulation in simulation and on hardware" />
+          </figure>
+          <p class="project-caption">Goal-conditioned dynamic rope manipulation in simulation and in the real world.</p>
+        </article>
+      </div>
+
+      <p class="project-summary">
+        A rope-swinging hit-target policy trained entirely in DeformX achieves
+        <strong>6.6 cm mean target-hitting error</strong> when deployed on a real UR5e robot.
+      </p>
+    </section>
+
+    <section class="card project-section">
+      <div class="section-head">
+        <h2>Paper</h2>
+        <span class="muted">Click to open the PDF</span>
+      </div>
+
+      <a class="project-paper-preview" href="assets/docs/DeformX.pdf" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/deformx_paper_stitched.jpg" alt="Preview of the DeformX paper" />
+      </a>
+    </section>
+
+    <section class="card project-section">
+      <div class="section-head">
+        <h2>Video</h2>
+        <span class="muted">Project overview and demonstrations</span>
+      </div>
+
+      <div class="project-video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/CQvS8lQYSS8"
+          title="DeformX video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="card project-section project-footer-card">
+      <div class="project-grid project-grid-two">
+        <div>
+          <h2>Acknowledgements</h2>
+          <p>This work is supported by the Biorobotics Lab at Carnegie Mellon University Robotics Institute.</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p>
+            Questions about the project can be directed to Yi Yang at
+            <a href="mailto:yangyi04@sjtu.edu.cn">yangyi04@sjtu.edu.cn</a>
+            or
+            <a href="mailto:yy6@andrew.cmu.edu">yy6@andrew.cmu.edu</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
