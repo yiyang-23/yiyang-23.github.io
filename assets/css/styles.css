@@ -192,6 +192,32 @@ h1 {
   gap: 20px;
 }
 
+.visitor-map {
+  max-width: 1200px;
+  margin: -54px auto 48px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.visitor-map-widget {
+  width: 124px;
+  height: 136px;
+  position: relative;
+  overflow: visible;
+}
+
+.visitor-map .clstrm_outer {
+  width: 124px !important;
+  height: 136px !important;
+}
+
+.visitor-map .clstrm_inner,
+.visitor-map .clstrm_globe {
+  width: 124px !important;
+  height: 124px !important;
+}
+
 .content .card {
   padding: 30px;
   background:
@@ -533,6 +559,11 @@ h3 {
   .award-grid li {
     padding-left: 16px;
   }
+
+  .visitor-map {
+    margin: -26px auto 34px;
+    justify-content: center;
+  }
 }
 
 .project-page-body {
@@ -818,4 +849,3 @@ h3 {
     font-size: 1.55rem;
   }
 }
-
