@@ -194,28 +194,23 @@ h1 {
 
 .visitor-map {
   max-width: 1200px;
-  margin: -54px auto 48px;
+  margin: -34px auto 48px;
   padding: 0 20px;
   display: flex;
   justify-content: center;
 }
 
 .visitor-map-widget {
-  width: 124px;
-  height: 136px;
-  position: relative;
-  overflow: visible;
-}
-
-.visitor-map .clstrm_outer {
-  width: 124px !important;
-  height: 136px !important;
-}
-
-.visitor-map .clstrm_inner,
-.visitor-map .clstrm_globe {
-  width: 124px !important;
-  height: 124px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  min-height: 125px;
+  padding: 10px;
+  border: 1px solid rgba(37, 95, 143, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow-soft);
 }
 
 .content .card {
@@ -562,7 +557,6 @@ h3 {
 
   .visitor-map {
     margin: -26px auto 34px;
-    justify-content: center;
   }
 }
 
