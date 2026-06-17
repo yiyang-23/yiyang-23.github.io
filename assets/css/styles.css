@@ -310,6 +310,18 @@ h3 {
   margin-bottom: 8px;
 }
 
+.timeline .news-emoji {
+  display: inline-block;
+  min-width: 0;
+  margin: 0 6px 0 2px;
+  font-size: 1.02em;
+  font-weight: 400;
+  line-height: 1;
+  color: inherit;
+  transform: translateY(1px);
+  filter: saturate(0.92);
+}
+
 .publication-list {
   margin-top: 8px;
   display: grid;
@@ -465,6 +477,24 @@ h3 {
 
 .hand-media {
   background: transparent;
+}
+
+.enpire-media {
+  min-height: 252px;
+  padding: 0;
+  background: transparent;
+  border-radius: 18px;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.publication-image-enpire {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 18px;
 }
 
 .two-col {
