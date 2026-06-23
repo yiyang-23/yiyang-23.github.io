@@ -475,6 +475,11 @@ h3 {
   color: #7c8598;
 }
 
+.pub-icon {
+  display: block;
+  flex: none;
+}
+
 .hand-media {
   background: transparent;
 }
