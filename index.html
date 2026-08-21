@@ -18,13 +18,20 @@
         </div>
         <h1>Yi Yang</h1>
         <p class="role">Undergraduate Researcher · Robotics &amp; Embodied AI</p>
+        <p class="location">
+          <svg class="location-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+            <circle cx="12" cy="11" r="2.2"/>
+          </svg>
+          Pittsburgh, USA
+        </p>
       </div>
 
       <nav class="quick-nav">
         <a href="#about">About</a>
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Education &amp; Experience</a>
         <a href="#awards">Awards</a>
       </nav>
 
@@ -32,18 +39,36 @@
         <p><strong>Status</strong><br>B.Eng. Student, Rising Senior</p>
         <p><strong>SJTU</strong><br><a href="mailto:yangyi04@sjtu.edu.cn">yangyi04@sjtu.edu.cn</a></p>
         <p><strong>CMU</strong><br><a href="mailto:yy6@andrew.cmu.edu">yy6@andrew.cmu.edu</a></p>
-        <p><strong>Location</strong><br>Pittsburgh / Shanghai</p>
       </div>
 
-      <div class="button-row">
-        <a class="btn" href="assets/docs/CV_Yi%20YANG.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        <a class="btn ghost" href="https://scholar.google.com/citations?user=_9Nt_D0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-          <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false">
-            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
-          </svg>
-          Google Scholar
-        </a>
-      </div>
+      <ul class="link-list">
+        <li>
+          <a href="assets/docs/CV_Yi%20YANG.pdf" target="_blank" rel="noopener noreferrer">
+            <svg class="link-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+              <path d="M16 13H8M16 17H8M10 9H8"/>
+            </svg>
+            CV
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=_9Nt_D0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+            <svg class="link-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false">
+              <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+            </svg>
+            Google Scholar
+          </a>
+        </li>
+        <li>
+          <button type="button" id="wechat-open" aria-haspopup="dialog" aria-controls="wechat-modal">
+            <svg class="link-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false">
+              <path d="M8.69 3C4.99 3 2 5.56 2 8.73c0 1.79.96 3.4 2.47 4.45l-.62 1.89 2.2-1.11c.79.22 1.63.34 2.5.34h.35a5.06 5.06 0 0 1-.2-1.43c0-3.1 3.01-5.6 6.73-5.6h.31C15.24 4.73 12.27 3 8.69 3zm-2.3 3.1a.91.91 0 1 1 0 1.82.91.91 0 0 1 0-1.82zm4.6 0a.91.91 0 1 1 0 1.82.91.91 0 0 1 0-1.82zM15.43 8.3C12.3 8.3 9.8 10.43 9.8 13c0 2.58 2.5 4.71 5.63 4.71.64 0 1.26-.09 1.85-.25l1.9.96-.53-1.64A4.52 4.52 0 0 0 21 13c0-2.57-2.5-4.7-5.57-4.7zm-1.89 2.6a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6zm3.8 0a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6z"/>
+            </svg>
+            WeChat
+          </button>
+        </li>
+      </ul>
     </aside>
 
     <main class="content">
@@ -138,7 +163,7 @@
               <p class="pub-authors">
                 <strong>Yi Yang*</strong>, Xiang Fei*, Lehong Wang*, Chenghao Li, Zilin Dai, Henry Kou, Lu Li, Howie Choset
               </p>
-              <p class="pub-meta">IEEE/RSJ IROS 2026 (accepted).</p>
+              <p class="pub-meta">IEEE/RSJ IROS 2026.</p>
               <div class="pub-links">
                 <a class="pub-btn" href="https://deformx.github.io/" target="_blank" rel="noopener noreferrer">Project Page</a>
                 <a class="pub-btn ghost" href="https://arxiv.org/abs/2606.22116" target="_blank" rel="noopener noreferrer">Paper</a>
@@ -171,7 +196,7 @@
       <!-- Background and experience -->
       <section id="experience" class="card two-col">
         <div>
-          <h2>Education</h2>
+          <h2>Education &amp; Experience</h2>
           <ul class="timeline">
             <li><span>2023 – 2027</span> B.Eng. in Engineering Mechanics, Shanghai Jiao Tong University (rising senior)</li>
             <li><span>2025 – 2026</span> Student Intern, Biorobotics Lab, Carnegie Mellon University</li>
@@ -200,7 +225,7 @@
       </section>
     </main>
   </div>
-  <div class="visitor-map">
+  <div class="visitor-map" id="visitor-map" hidden>
     <div class="visitor-map-widget" aria-label="Visitor map">
       <script id="_wau905">
         var _wau = _wau || [];
@@ -209,5 +234,42 @@
       <script async src="https://waust.at/m.js"></script>
     </div>
   </div>
+  <script>
+    // Show the visitor map only once the third-party widget actually renders
+    // (it is blocked by many ad blockers / networks, which would leave an empty box).
+    (function () {
+      var wrap = document.getElementById('visitor-map');
+      var widget = wrap && wrap.querySelector('.visitor-map-widget');
+      if (!wrap || !widget || !('MutationObserver' in window)) return;
+      function reveal() { wrap.hidden = false; }
+      if (widget.querySelector('img')) { reveal(); return; }
+      var mo = new MutationObserver(function () {
+        if (widget.querySelector('img')) { reveal(); mo.disconnect(); }
+      });
+      mo.observe(widget, { childList: true, subtree: true });
+    })();
+  </script>
+
+  <div id="wechat-modal" class="wechat-modal" role="dialog" aria-modal="true" aria-labelledby="wechat-modal-title" hidden>
+    <div class="wechat-modal-card">
+      <button class="wechat-modal-close" type="button" id="wechat-close" aria-label="Close">&times;</button>
+      <img src="assets/images/wechat-qr.jpg" alt="WeChat QR code for Yi Yang" />
+      <p id="wechat-modal-title">Scan to add me on WeChat</p>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var modal = document.getElementById('wechat-modal');
+      var openBtn = document.getElementById('wechat-open');
+      var closeBtn = document.getElementById('wechat-close');
+      if (!modal || !openBtn) return;
+      function open() { modal.hidden = false; document.body.classList.add('modal-open'); closeBtn.focus(); }
+      function close() { modal.hidden = true; document.body.classList.remove('modal-open'); openBtn.focus(); }
+      openBtn.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
+    })();
+  </script>
 </body>
 </html>
