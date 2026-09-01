@@ -508,8 +508,7 @@ h3 {
   border-left: 3px solid #c62828;
   border-radius: 0 8px 8px 0;
   background: linear-gradient(90deg, #fdeeed, rgba(253, 238, 237, 0) 88%);
-  padding: 6px 12px 6px 15px;
-  margin-bottom: 10px;
+  padding: 0 12px 0 15px;
 }
 
 .timeline li.news-award::before {
