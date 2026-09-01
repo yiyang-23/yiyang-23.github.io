@@ -59,7 +59,7 @@ a {
   padding: 44px 20px 76px;
   display: grid;
   gap: 24px;
-  grid-template-columns: 340px minmax(0, 1fr);
+  grid-template-columns: 300px minmax(0, 1fr);
   align-items: start;
 }
 
@@ -497,7 +497,7 @@ h3 {
   font-weight: 700;
   color: #2f3b52;
   display: inline-block;
-  min-width: 92px;
+  min-width: 76px;
 }
 
 .timeline.compact li {
@@ -719,7 +719,7 @@ h3 {
   border-radius: 18px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1160px) {
   .page-shell {
     grid-template-columns: 1fr;
   }
@@ -732,7 +732,9 @@ h3 {
   .content .card {
     border-radius: 24px;
   }
+}
 
+@media (max-width: 1080px) {
   .publication-card {
     grid-template-columns: 1fr;
   }
