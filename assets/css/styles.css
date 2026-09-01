@@ -504,6 +504,23 @@ h3 {
   margin-bottom: 8px;
 }
 
+.timeline li.news-award {
+  border-left: 3px solid #c62828;
+  border-radius: 0 8px 8px 0;
+  background: linear-gradient(90deg, #fdeeed, rgba(253, 238, 237, 0) 88%);
+  padding: 6px 12px 6px 15px;
+  margin-bottom: 10px;
+}
+
+.timeline li.news-award::before {
+  content: none;
+}
+
+.news-award-title {
+  color: #c62828;
+  font-weight: 700;
+}
+
 .timeline .news-emoji {
   display: inline-block;
   min-width: 0;
