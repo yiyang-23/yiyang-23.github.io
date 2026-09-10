@@ -18,6 +18,13 @@
   box-sizing: border-box;
 }
 
+/* width/height attributes on <img> are intrinsic-size hints for aspect-ratio
+   (they stop layout shift while images load); this keeps CSS in charge of the
+   rendered box. Any class rule that sets an explicit height still wins. */
+img {
+  height: auto;
+}
+
 html,
 body {
   margin: 0;

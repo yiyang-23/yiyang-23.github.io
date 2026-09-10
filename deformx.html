@@ -4,6 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DeformX | Yi Yang</title>
+  <meta name="description" content="DeformX integrates a Cosserat rod physics engine with NVIDIA Isaac Sim to simulate wires, cables, and ropes with dynamics, self-collisions, and mesh interaction, using mesh skinning for high-fidelity visualization." />
+  <link rel="canonical" href="https://yiyang-23.github.io/deformx.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Yi Yang" />
+  <meta property="og:title" content="DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects" />
+  <meta property="og:description" content="DeformX integrates a Cosserat rod physics engine with NVIDIA Isaac Sim to simulate wires, cables, and ropes with dynamics, self-collisions, and mesh interaction, using mesh skinning for high-fidelity visualization." />
+  <meta property="og:url" content="https://yiyang-23.github.io/deformx.html" />
+  <meta property="og:image" content="https://yiyang-23.github.io/assets/images/deformx_cover.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="654" />
+  <meta property="og:image:alt" content="DeformX cover figure" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@_yiyang04" />
+  <meta name="twitter:creator" content="@_yiyang04" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -44,7 +61,7 @@
       </div>
 
       <figure class="project-cover">
-        <img src="assets/images/deformx_cover.jpg" alt="DeformX framework overview" />
+        <img src="assets/images/deformx_cover.jpg" alt="DeformX framework overview" width="1600" height="654" decoding="async" />
       </figure>
 
       <p class="project-lead">
@@ -63,7 +80,7 @@
 
       <div class="project-feature">
         <figure class="project-feature-media">
-          <img src="assets/images/deformx_system.png" alt="DeformX co-simulation framework diagram" />
+          <img src="assets/images/deformx_system.jpg" alt="DeformX co-simulation framework diagram" width="1274" height="335" loading="lazy" decoding="async" />
         </figure>
         <div class="project-feature-copy">
           <h3>Co-Simulation Framework</h3>
@@ -78,7 +95,7 @@
       <div class="project-grid project-grid-three">
         <article class="project-mini-card">
           <figure class="project-mini-media">
-            <img src="assets/images/deformx_figure2.png" alt="Mesh skinning visualization for DeformX" />
+            <img src="assets/images/deformx_figure2.jpg" alt="Mesh skinning visualization for DeformX" width="610" height="639" loading="lazy" decoding="async" />
           </figure>
           <h3>Mesh Skinning</h3>
           <p>Maps discrete Cosserat rod deformation onto CAD models for high-fidelity visualization.</p>
@@ -86,7 +103,7 @@
 
         <article class="project-mini-card">
           <figure class="project-mini-media">
-            <img src="assets/images/deformx_contact.png" alt="Free-form mesh contact in DeformX" />
+            <img src="assets/images/deformx_contact.jpg" alt="Free-form mesh contact in DeformX" width="610" height="586" loading="lazy" decoding="async" />
           </figure>
           <h3>Free-Form Mesh Contact</h3>
           <p>Supports realistic interaction between deformable linear objects and arbitrary meshes.</p>
@@ -94,7 +111,7 @@
 
         <article class="project-mini-card">
           <figure class="project-mini-media">
-            <img src="assets/images/deformx_pipeline.jpg" alt="WireSeg-32k dataset generation pipeline" />
+            <img src="assets/images/deformx_pipeline.jpg" alt="WireSeg-32k dataset generation pipeline" width="610" height="437" loading="lazy" decoding="async" />
           </figure>
           <h3>WireSeg-32k Dataset</h3>
           <p>Provides 32,000 synthetic wire segmentation images with depth and instance masks.</p>
@@ -111,7 +128,7 @@
       <div class="project-grid project-grid-two">
         <article class="project-panel">
           <figure class="project-panel-media">
-            <img src="assets/images/deformx_dataset.jpg" alt="WireSeg-32k synthetic dataset examples" />
+            <img src="assets/images/deformx_dataset.jpg" alt="WireSeg-32k synthetic dataset examples" width="974" height="977" loading="lazy" decoding="async" />
           </figure>
           <p class="project-caption">
             32,000 synthetic images from 300+ simulation runs across Easy, Medium, and Hard tiers in
@@ -121,7 +138,7 @@
 
         <article class="project-panel">
           <figure class="project-panel-media">
-            <img src="assets/images/deformx_segmentation.jpg" alt="Segmentation results from DeformX-generated training data" />
+            <img src="assets/images/deformx_segmentation.jpg" alt="Segmentation results from DeformX-generated training data" width="974" height="700" loading="lazy" decoding="async" />
           </figure>
           <p class="project-caption">
             Fine-tuning SAM3 on DeformX-generated data yields a <strong>10.2% mAP@75 improvement</strong>
@@ -140,14 +157,14 @@
       <div class="project-stack">
         <article class="project-panel project-panel-narrow">
           <figure class="project-panel-media">
-            <img src="assets/images/deformx_sin_motion.jpg" alt="Physics validation with robot-driven rope motion" />
+            <img src="assets/images/deformx_sin_motion.jpg" alt="Physics validation with robot-driven rope motion" width="1600" height="623" loading="lazy" decoding="async" />
           </figure>
           <p class="project-caption">Physics validation with robot-driven rope motion and motion-capture comparison.</p>
         </article>
 
         <article class="project-panel project-panel-narrow">
           <figure class="project-panel-media">
-            <img src="assets/images/deformx_demo3.jpg" alt="Goal-conditioned rope manipulation in simulation and on hardware" />
+            <img src="assets/images/deformx_demo3.jpg" alt="Goal-conditioned rope manipulation in simulation and on hardware" width="1600" height="853" loading="lazy" decoding="async" />
           </figure>
           <p class="project-caption">Goal-conditioned dynamic rope manipulation in simulation and in the real world.</p>
         </article>
@@ -166,7 +183,7 @@
       </div>
 
       <a class="project-paper-preview" href="assets/docs/DeformX.pdf" target="_blank" rel="noopener noreferrer">
-        <img src="assets/images/deformx_paper_stitched.jpg" alt="Preview of the DeformX paper" />
+        <img src="assets/images/deformx_paper_stitched.jpg" alt="Preview of the DeformX paper" width="2144" height="346" loading="lazy" decoding="async" />
       </a>
     </section>
 
