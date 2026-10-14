@@ -45,4 +45,4 @@ python3 -m http.server 4173 --bind 127.0.0.1
 
 ## Publication image sources
 
-- `assets/images/point-it-strike-it.png`: Point It, Strike It publication figure, from [Xiang Fei's homepage](https://edgarfx.github.io/assets/pub-deformy.png), reused for the coauthor's publication listing. [Project page](https://deformx.github.io/DeformY/).
+- `assets/images/point-it-strike-it.webp`: Point It, Strike It publication figure, from [Xiang Fei's homepage](https://edgarfx.github.io/assets/pub-deformy.png), reused for the coauthor's publication listing and encoded as a smaller WebP for page loading. [Project page](https://deformx.github.io/DeformY/).

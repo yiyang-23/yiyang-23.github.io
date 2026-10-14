@@ -599,6 +599,14 @@ h3 {
 
 .point-strike-media {
   min-height: 252px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.point-strike-media .pub-badge {
+  position: static;
+  align-self: flex-start;
 }
 
 .point-strike-media > a {
