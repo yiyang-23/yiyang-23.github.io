@@ -42,3 +42,7 @@ python3 -m http.server 4173 --bind 127.0.0.1
 2. `Settings -> Pages` 已启用，Source 指向正确分支的根目录。
 3. `index.html` 位于仓库根目录。
 4. 仓库可被 GitHub Pages 正常发布。
+
+## Publication image sources
+
+- `assets/images/point-it-strike-it.png`: Point It, Strike It publication figure, from [Xiang Fei's homepage](https://edgarfx.github.io/assets/pub-deformy.png), reused for the coauthor's publication listing. [Project page](https://deformx.github.io/DeformY/).

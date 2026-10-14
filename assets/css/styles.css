@@ -597,6 +597,24 @@ h3 {
   border-radius: 18px;
 }
 
+.point-strike-media {
+  min-height: 252px;
+}
+
+.point-strike-media > a {
+  display: block;
+  width: 100%;
+}
+
+.publication-image-point-strike {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
 .publication-body {
   display: grid;
   gap: 10px;
