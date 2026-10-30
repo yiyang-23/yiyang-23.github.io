@@ -393,25 +393,6 @@ h3 {
   font-size: 0.92rem;
 }
 
-.chips {
-  list-style: none;
-  margin: 18px 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.chips li {
-  background: linear-gradient(180deg, #f4f8fc 0%, #edf4fa 100%);
-  color: #234d73;
-  border: 1px solid rgba(37, 95, 143, 0.12);
-  border-radius: 999px;
-  padding: 6px 12px;
-  font-size: 0.84rem;
-  font-weight: 600;
-}
-
 .edu-list {
   margin: 0;
   padding: 0;
