@@ -669,8 +669,8 @@ h3 {
 
 .pub-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap;
+  gap: 6px;
   padding-top: 4px;
 }
 
@@ -678,14 +678,16 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 96px;
-  padding: 10px 16px;
+  min-width: 0;
+  padding: 10px;
   border: 1px solid rgba(29, 44, 63, 0.16);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.94);
   color: #1e2636;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
   line-height: 1;
   transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
@@ -823,6 +825,13 @@ h3 {
 
   .visitor-map {
     margin: -26px auto 34px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pub-btn {
+    padding: 10px 6px;
+    font-size: 0.8rem;
   }
 }
 
